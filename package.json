@@ -1,0 +1,37 @@
+{
+  "name": "rand-o",
+  "version": "1.0.0",
+  "description": "MERN + Redux + Passport + Google OAuth demo to that selects randos from a list.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js",
+    "start": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nielsenjared/rand-o.git"
+  },
+  "keywords": [
+    "mern",
+    "redux",
+    "passport",
+    "google",
+    "oauth"
+  ],
+  "author": "Jared Nielsen",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.9",
+    "nodemon": "^1.14.11",
+    "passport": "^0.4.0",
+    "passport-github": "^1.1.0",
+    "path": "^0.12.7"
+  }
+}
