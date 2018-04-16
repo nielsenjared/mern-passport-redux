@@ -19,7 +19,7 @@ renderContent() {
 
 		return (
       <nav>
-				rand-O
+				MERN + Passport + Redux
 				<ul>
 				{this.renderContent()}
 				</ul>
